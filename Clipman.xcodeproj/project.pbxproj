@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		CC9F48F42BA72F440086E6DB /* ClipmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F48F32BA72F440086E6DB /* ClipmanApp.swift */; };
-		CC9F48F62BA72F440086E6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F48F52BA72F440086E6DB /* ContentView.swift */; };
 		CC9F48F82BA72F450086E6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9F48F72BA72F450086E6DB /* Assets.xcassets */; };
 		CC9F48FB2BA72F450086E6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9F48FA2BA72F450086E6DB /* Preview Assets.xcassets */; };
 		CC9F49032BA72F7F0086E6DB /* PasteboardWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F49022BA72F7F0086E6DB /* PasteboardWatcher.swift */; };
 		CC9F49062BA823CD0086E6DB /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = CC9F49052BA823CD0086E6DB /* LaunchAtLogin */; };
+		CC9F49082BA837D40086E6DB /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F49072BA837D40086E6DB /* AboutView.swift */; };
+		CC9F490A2BA84B780086E6DB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F49092BA84B780086E6DB /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC9F48F02BA72F440086E6DB /* Clipman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9F48F32BA72F440086E6DB /* ClipmanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipmanApp.swift; sourceTree = "<group>"; };
-		CC9F48F52BA72F440086E6DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC9F48F72BA72F450086E6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9F48FA2BA72F450086E6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC9F48FC2BA72F450086E6DB /* Clipman.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipman.entitlements; sourceTree = "<group>"; };
 		CC9F49022BA72F7F0086E6DB /* PasteboardWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardWatcher.swift; sourceTree = "<group>"; };
+		CC9F49072BA837D40086E6DB /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		CC9F49092BA84B780086E6DB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,12 @@
 			isa = PBXGroup;
 			children = (
 				CC9F48F32BA72F440086E6DB /* ClipmanApp.swift */,
-				CC9F48F52BA72F440086E6DB /* ContentView.swift */,
 				CC9F48F72BA72F450086E6DB /* Assets.xcassets */,
 				CC9F48FC2BA72F450086E6DB /* Clipman.entitlements */,
 				CC9F48F92BA72F450086E6DB /* Preview Content */,
 				CC9F49022BA72F7F0086E6DB /* PasteboardWatcher.swift */,
+				CC9F49072BA837D40086E6DB /* AboutView.swift */,
+				CC9F49092BA84B780086E6DB /* MenuView.swift */,
 			);
 			path = Clipman;
 			sourceTree = "<group>";
@@ -150,8 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9F49082BA837D40086E6DB /* AboutView.swift in Sources */,
+				CC9F490A2BA84B780086E6DB /* MenuView.swift in Sources */,
 				CC9F49032BA72F7F0086E6DB /* PasteboardWatcher.swift in Sources */,
-				CC9F48F62BA72F440086E6DB /* ContentView.swift in Sources */,
 				CC9F48F42BA72F440086E6DB /* ClipmanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
