@@ -11,6 +11,8 @@
 		CC9F48F62BA72F440086E6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F48F52BA72F440086E6DB /* ContentView.swift */; };
 		CC9F48F82BA72F450086E6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9F48F72BA72F450086E6DB /* Assets.xcassets */; };
 		CC9F48FB2BA72F450086E6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9F48FA2BA72F450086E6DB /* Preview Assets.xcassets */; };
+		CC9F49032BA72F7F0086E6DB /* PasteboardWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F49022BA72F7F0086E6DB /* PasteboardWatcher.swift */; };
+		CC9F49062BA823CD0086E6DB /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = CC9F49052BA823CD0086E6DB /* LaunchAtLogin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		CC9F48F72BA72F450086E6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9F48FA2BA72F450086E6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC9F48FC2BA72F450086E6DB /* Clipman.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipman.entitlements; sourceTree = "<group>"; };
+		CC9F49022BA72F7F0086E6DB /* PasteboardWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardWatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9F49062BA823CD0086E6DB /* LaunchAtLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 				CC9F48F72BA72F450086E6DB /* Assets.xcassets */,
 				CC9F48FC2BA72F450086E6DB /* Clipman.entitlements */,
 				CC9F48F92BA72F450086E6DB /* Preview Content */,
+				CC9F49022BA72F7F0086E6DB /* PasteboardWatcher.swift */,
 			);
 			path = Clipman;
 			sourceTree = "<group>";
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = Clipman;
+			packageProductDependencies = (
+				CC9F49052BA823CD0086E6DB /* LaunchAtLogin */,
+			);
 			productName = Clipman;
 			productReference = CC9F48F02BA72F440086E6DB /* Clipman.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +121,9 @@
 				Base,
 			);
 			mainGroup = CC9F48E72BA72F440086E6DB;
+			packageReferences = (
+				CC9F49042BA823CD0086E6DB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
 			productRefGroup = CC9F48F12BA72F440086E6DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9F49032BA72F7F0086E6DB /* PasteboardWatcher.swift in Sources */,
 				CC9F48F62BA72F440086E6DB /* ContentView.swift in Sources */,
 				CC9F48F42BA72F440086E6DB /* ClipmanApp.swift in Sources */,
 			);
@@ -279,6 +291,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Clipman;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +321,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Clipman;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC9F49042BA823CD0086E6DB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC9F49052BA823CD0086E6DB /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC9F49042BA823CD0086E6DB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC9F48E82BA72F440086E6DB /* Project object */;
 }
